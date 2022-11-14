@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Farmer</title>
+</head>
+<body>
+<form action="#" th:action="@{/editFarmer}" th:object="${farmer}" th:method="POST">
+    <label for="uid">UID</label>
+    <input readonly type="number" th:field="*{uid}" id="uid" placeholder="UID"></br>
+    <label for="firstName">First Name</label>
+    <input type="text" th:field="*{first_name}" id="firstName" placeholder="First Name"></br>
+    <label for="lastName">Last Name</label>
+    <input type="text" th:field="*{last_name}" id="lastName" placeholder="Last Name"></br>
+    <label for="number">Phone Number</label>
+    <input type="text" th:field="*{phone_number}" id="number" placeholder="Phone Number"></br>
+    <input type="submit" value="Update">
+</form>
+</body>
+</html>
